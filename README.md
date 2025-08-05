@@ -10,4 +10,18 @@ Uma página interativa feita com HTML, CSS e JavaScript puro. O projeto simula u
 - Estilização com CSS puro
 
 ## Estrutura do projeto
+/assets
+├── icons/
+├── images/
+├── logo.svg
+index.html
+style.css
+script.js
+README.md
+
+
+
+🔗 Acesse o projeto online: [Clique aqui para ver o site](https://interactive-page.vercel.app)
+
+
 
