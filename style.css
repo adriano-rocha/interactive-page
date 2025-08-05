@@ -1,0 +1,247 @@
+:root {
+  --bg: #f8f8f8;
+  --bg-claro: #fff;
+  --text: #333;
+  --text-claro: #444;
+  --primary: #4caf50;
+  --primary-dark: #388e3c;
+  --accent: #ffe082;
+  --font: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.dark-mode {
+  --bg: #333;
+  --bg-claro: #444;
+  --text: #f8f8f8;
+  --text-claro: #fff;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  gap: 3rem;
+}
+
+.container-hero {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--text);
+  color: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav a {
+  font-weight: 600;
+}
+
+#btn-tema {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.hero-texto,
+.hero-img {
+  min-width: 320px;
+}
+
+.hero-img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+}
+
+.beneficios,
+.download {
+  background-color: var(--bg-claro);
+}
+
+.beneficios,
+.depoimentos,
+.download,
+.hero {
+  padding: 6rem 3rem;
+}
+
+.beneficios,
+.depoimentos,
+.download {
+  text-align: center;
+}
+
+.download-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--text);
+  color: var(--bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.usuarios {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.usuarios img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--bg);
+  font-size: 0.9rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#fechar-modal {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+body.dark-mode .modal-content {
+  background: #2a2a2a;
+}
+
+figure {
+  max-width: 300px;
+}
+
+.logo .texto-claro {
+  fill: var(--bg);
+}
+
+.hero-img .parte-cinza {
+  fill: var(--text);
+}
+
+@media (max-width: 600px) {
+  .header {
+    justify-content: center;
+  }
+
+  .beneficios,
+  .depoimentos,
+  .download,
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+}
