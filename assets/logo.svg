@@ -1,0 +1,13 @@
+<svg width="180" height="50" viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ícone de alvo (foco) -->
+  <circle cx="25" cy="25" r="10" stroke="#4CAF50" stroke-width="2"/>
+  <circle cx="25" cy="25" r="4" fill="#4CAF50"/>
+
+  <!-- Texto da logo -->
+  <text x="50" y="32" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#f5f5f5">
+    Focus
+  </text>
+  <text x="105" y="32" font-family="Inter, sans-serif" font-size="24" font-weight="300" fill="#4CAF50">
+    App
+  </text>
+</svg>
